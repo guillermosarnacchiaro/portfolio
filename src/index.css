@@ -67,6 +67,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
 button,
 a,
 input,

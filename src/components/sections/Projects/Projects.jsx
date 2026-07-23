@@ -5,7 +5,7 @@ import SectionHeading from '../../ui/SectionHeading/SectionHeading.jsx'
 
 function Projects() {
   return (
-    <section id="projects" className="border-t border-border py-14 md:py-18 lg:py-24">
+    <section id="projects" className="scroll-mt-16 border-y border-border bg-gradient-to-b from-surface-hover/55 via-background to-background py-14 md:py-18 lg:py-24">
       <Container>
         <SectionHeading
           eyebrow="Proyecto destacado"

@@ -6,7 +6,7 @@ import ThemeToggle from '../../ui/ThemeToggle/ThemeToggle.jsx'
 const links = [
   ['Sobre mí', '#about'],
   ['Proyectos', '#projects'],
-  ['Experiencia', '#experience'],
+  ['Proceso', '#process'],
   ['Contacto', '#contact'],
 ]
 

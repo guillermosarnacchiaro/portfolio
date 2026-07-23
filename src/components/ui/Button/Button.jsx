@@ -7,9 +7,12 @@ const variants = {
 }
 
 function Button({ as: Component = 'button', variant = 'primary', className = '', ...props }) {
+  const buttonProps = Component === 'button' && !props.type ? { type: 'button' } : {}
+
   return (
     <Component
-      className={`inline-flex min-h-14 items-center justify-center gap-2 rounded-button px-5 py-3 text-sm font-semibold transition-all duration-200 ease-standard disabled:pointer-events-none disabled:opacity-50 ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-14 items-center justify-center gap-2 rounded-button px-5 py-3 text-sm font-semibold transition-all duration-200 ease-standard focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${variants[variant]} ${className}`}
+      {...buttonProps}
       {...props}
     />
   )

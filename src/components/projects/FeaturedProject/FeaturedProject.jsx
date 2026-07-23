@@ -3,12 +3,16 @@ import { m, useReducedMotion } from 'framer-motion'
 import Badge from '../../ui/Badge/Badge.jsx'
 import Button from '../../ui/Button/Button.jsx'
 import WordWorkPreview from '../WordWorkPreview/WordWorkPreview.jsx'
+import ProjectArchitecture from '../ProjectArchitecture/ProjectArchitecture.jsx'
+import ProjectFeatures from '../ProjectFeatures/ProjectFeatures.jsx'
+import ProjectGallery from '../ProjectGallery/ProjectGallery.jsx'
 
 function FeaturedProject({ project }) {
   const reduceMotion = useReducedMotion()
 
   return (
-    <article className="overflow-hidden rounded-card border border-border bg-surface shadow-card">
+    <div>
+      <article className="overflow-hidden rounded-card border border-border bg-surface shadow-card">
       <div className="grid items-stretch lg:grid-cols-[2fr_3fr]">
         <div className="flex flex-col p-5 min-[380px]:p-6 sm:p-8 lg:p-10">
           <div className="flex flex-wrap items-center gap-2">
@@ -78,7 +82,11 @@ function FeaturedProject({ project }) {
           </p>
         </div>
       </div>
-    </article>
+      </article>
+      <ProjectGallery />
+      <ProjectFeatures />
+      <ProjectArchitecture />
+    </div>
   )
 }
 
