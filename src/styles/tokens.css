@@ -1,7 +1,7 @@
 :root,
 :root[data-theme='light'] {
   color-scheme: light;
-  --ds-background: #f8fafc;
+  --ds-background: #ffffff;
   --ds-surface: #ffffff;
   --ds-surface-hover: #f1f5f9;
   --ds-foreground: #0f172a;

@@ -6,7 +6,6 @@ import ThemeToggle from '../../ui/ThemeToggle/ThemeToggle.jsx'
 const links = [
   ['Sobre mí', '#about'],
   ['Proyectos', '#projects'],
-  ['Experiencia', '#experience'],
   ['Contacto', '#contact'],
 ]
 
@@ -63,12 +62,20 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-xl">
       <Container className="flex h-16 items-center justify-between">
         <a
-          className="grid size-9 place-items-center rounded-xl border border-border bg-surface text-sm font-bold tracking-[-0.04em] text-foreground shadow-card transition-colors duration-200 hover:border-primary/40"
+          className="group shrink-0 whitespace-nowrap text-[16.5px] leading-none"
           href="#top"
           aria-label="Ir al inicio"
           onClick={() => setMenuOpen(false)}
         >
-          GS<span className="sr-only">Guillermo Sarnacchiaro</span>
+          <span className="font-semibold text-[#18233A] transition-colors duration-200 group-hover:text-[#26344F]">
+            Guillermo
+          </span>
+          <span className="hidden font-normal text-[#526078] transition-colors duration-200 group-hover:text-[#66738A] sm:inline">
+            {' '}Sarnacchiaro
+          </span>
+          <span className="font-normal text-[#526078] transition-colors duration-200 group-hover:text-[#66738A] sm:hidden">
+            {' '}S.
+          </span>
         </a>
 
         <nav className="hidden md:block" aria-label="Navegación principal">

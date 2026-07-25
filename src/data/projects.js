@@ -17,4 +17,21 @@ export const projects = [
     frontendUrl: 'https://github.com/guillermosarnacchiaro/WordWork-frontend',
     backendUrl: 'https://github.com/guillermosarnacchiaro/WordWork-backend',
   },
+  {
+    name: 'LUMA',
+    category: 'E-commerce',
+    status: 'Frontend · Proyecto reciente',
+    description:
+      'Tienda editorial de indumentaria con una experiencia de compra completa, desde la exploración del catálogo hasta la gestión del carrito.',
+    highlights: [
+      'Catálogo con búsqueda, filtros y ordenamiento',
+      'Detalle de producto con talles y colores',
+      'Favoritos y carrito persistentes',
+      'Interfaz responsive para todos los dispositivos',
+    ],
+    technologies: ['React 19', 'Vite', 'JavaScript', 'CSS', 'LocalStorage'],
+    proofPoints: ['Diseño responsive', 'Estado persistente', 'UX de e-commerce'],
+    demoUrl: 'https://ecommerce-base-self.vercel.app/',
+    frontendUrl: 'https://github.com/guillermosarnacchiaro/ecommerce-base',
+  },
 ]

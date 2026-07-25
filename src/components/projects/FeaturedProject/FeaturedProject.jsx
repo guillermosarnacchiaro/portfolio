@@ -8,8 +8,9 @@ function FeaturedProject({ project }) {
   const reduceMotion = useReducedMotion()
 
   return (
-    <article className="overflow-hidden rounded-card border border-border bg-surface shadow-card">
-      <div className="grid items-stretch lg:grid-cols-[2fr_3fr]">
+    <div>
+      <article className="overflow-hidden rounded-card border border-border bg-surface shadow-card lg:min-h-[670px]">
+      <div className="grid h-full items-stretch lg:grid-cols-[2fr_3fr]">
         <div className="flex flex-col p-5 min-[380px]:p-6 sm:p-8 lg:p-10">
           <div className="flex flex-wrap items-center gap-2">
             <Badge className="gap-1.5 text-foreground">
@@ -64,21 +65,24 @@ function FeaturedProject({ project }) {
           </div>
         </div>
 
-        <div className="overflow-hidden border-t border-border bg-gradient-to-br from-primary/8 via-secondary/5 to-transparent p-3 min-[380px]:p-5 sm:p-8 lg:border-t-0 lg:border-l lg:p-10">
-          <m.div
-            className="origin-center drop-shadow-[0_28px_40px_rgba(37,99,235,0.10)]"
-            initial={reduceMotion ? undefined : { rotate: -2 }}
-            animate={reduceMotion ? undefined : { y: [0, -4, 0], rotate: -2 }}
-            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <WordWorkPreview />
-          </m.div>
-          <p className="mt-4 text-center text-xs leading-5 text-subtle">
-            Vista conceptual basada en la interfaz de WordWork.
-          </p>
+        <div className="flex flex-col justify-center overflow-hidden border-t border-border bg-gradient-to-br from-primary/8 via-secondary/5 to-transparent p-3 min-[380px]:p-5 sm:p-8 lg:border-t-0 lg:border-l lg:p-10">
+          <div className="mx-auto w-full max-w-2xl">
+            <m.div
+              className="origin-center drop-shadow-[0_28px_40px_rgba(37,99,235,0.10)]"
+              initial={reduceMotion ? undefined : { rotate: -2 }}
+              animate={reduceMotion ? undefined : { y: [0, -4, 0], rotate: -2 }}
+              transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <WordWorkPreview />
+            </m.div>
+            <p className="mt-4 text-center text-xs leading-5 text-subtle">
+              Vista conceptual basada en la interfaz de WordWork.
+            </p>
+          </div>
         </div>
       </div>
-    </article>
+      </article>
+    </div>
   )
 }
 
