@@ -3,9 +3,6 @@ import { m, useReducedMotion } from 'framer-motion'
 import Badge from '../../ui/Badge/Badge.jsx'
 import Button from '../../ui/Button/Button.jsx'
 import WordWorkPreview from '../WordWorkPreview/WordWorkPreview.jsx'
-import ProjectArchitecture from '../ProjectArchitecture/ProjectArchitecture.jsx'
-import ProjectFeatures from '../ProjectFeatures/ProjectFeatures.jsx'
-import ProjectGallery from '../ProjectGallery/ProjectGallery.jsx'
 
 function FeaturedProject({ project }) {
   const reduceMotion = useReducedMotion()
@@ -83,9 +80,6 @@ function FeaturedProject({ project }) {
         </div>
       </div>
       </article>
-      <ProjectGallery />
-      <ProjectFeatures />
-      <ProjectArchitecture />
     </div>
   )
 }
